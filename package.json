@@ -7,7 +7,7 @@
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "create:css": "node-sass sass/main.scss css/style.css",
     "start": "npm-run-all --parallel run-server watch:sass",
-    "run-server": "live-server",
+    "run-server": "live-server --browser=firefox",
     "compress:css": "node-sass sass/main.sass compress.css --styled compressed",
     "build:css": "postcss css/style.css --use autoprefixer -d production"
   },
